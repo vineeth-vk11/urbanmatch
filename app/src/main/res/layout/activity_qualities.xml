@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".profileUi.QualitiesActivity">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/qualities_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="50dp"
+            app:chipSpacingHorizontal="5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/save"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:singleSelection="false">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/adventorous"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adventorous" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/ambitious"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ambitious" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/ambivert"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ambivert" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/artist"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Artist" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/calm"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calm" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/caring"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Caring" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chailover"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ChaiLover" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/charming"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Charming" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/cheerful"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cheerful" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chocaholic"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chocaholic" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/coffelover"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CoffeLover" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/creative"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Creative" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/curious"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Curious" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/dance"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dancer" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/doglover"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DogLover" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/dreamer"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dreamer" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/emotional"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Emotional" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/energetic"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Energetic" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/entertainer"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Entertainer" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/entrepreneur"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Entrepreneur" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/extrovert"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Extrovert" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/faithful"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Faithful" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/fitnessfreak"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FitnessFreak" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/foodie"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Foodie" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/friendly"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Friendly" />
+
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/funny"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Funny" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/gadgetlover"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GadgetLover" />
+            <com.google.android.material.chip.Chip
+                android:id="@+id/gameaddict"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GameAddict" />
+            <com.google.android.material.chip.Chip
+                android:id="@+id/geek"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Geek" />
+            <com.google.android.material.chip.Chip
+                android:id="@+id/gym"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gym" />
+            <com.google.android.material.chip.Chip
+                android:id="@+id/humorous"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Humorous" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/independent"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Independent" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/intellectual"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Intellectual" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/introvert"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Introvert" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/kind"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kind" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/loyal"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loyal" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/meditation"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meditation" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/moody"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Moody" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/motivated"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Motivated" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/moviebuff"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MovieBuff" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/musiclover"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MusicLover" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/mysterious"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mysterious" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/naturelover"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NatureLover" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/nightowl"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NightOwl" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/openminded"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OpenMinded" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/optimistic"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Optimistic" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/partyhopper"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PartyHopper" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/reader"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reader" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/religious"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Religious" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/romantic"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Romantic" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/sarcastic"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sarcastic" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/sexy"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sexy" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/shopaholic"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shopaholic" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/shy"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shy" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/simple"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Simple" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/spiritual"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Spiritual" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/sportsenthusiast"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SportsEnthusiast" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/stylish"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stylish" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/talkative"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Talkative" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/techie"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Techie" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/traveller"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Traveller" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/workaholic"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Workaholic" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/writer"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Writer" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/yoga"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yoga" />
+        </com.google.android.material.chip.ChipGroup>
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="341dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="16dp"
+            android:text="Select 10 of your best qualities"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

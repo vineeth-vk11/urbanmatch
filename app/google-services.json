@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1084416029765",
+    "firebase_url": "https://urbanmatch-73303.firebaseio.com",
+    "project_id": "urbanmatch-73303",
+    "storage_bucket": "urbanmatch-73303.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1084416029765:android:a34d3115c30c398b8d9f2c",
+        "android_client_info": {
+          "package_name": "com.example.urbanmatch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1084416029765-dptcs5sr7pmrrd30t78391aj0va98okp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.urbanmatch",
+            "certificate_hash": "8481498d744f894a6dbe670ac530e382491ef038"
+          }
+        },
+        {
+          "client_id": "1084416029765-adsssaqcb85u748qbogibjau2iib3s11.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDess56fsN_rmOe6EjXgL7AInKQ2UtRuG0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1084416029765-adsssaqcb85u748qbogibjau2iib3s11.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

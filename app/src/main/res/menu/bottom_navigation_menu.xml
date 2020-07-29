@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:title="Home"
+        android:icon="@drawable/ic_baseline_home_24"/>
+
+    <item
+        android:id="@+id/proposals"
+        android:enabled="true"
+        android:title="Proposals"
+        android:icon="@drawable/ic_favorite_24px"/>
+
+    <item
+        android:id="@+id/chat"
+        android:enabled="true"
+        android:title="Chat"
+        android:icon="@drawable/ic_baseline_chat_24"/>
+
+    <item
+        android:id="@+id/profile"
+        android:enabled="true"
+        android:title="Profile"
+        android:icon="@drawable/ic_baseline_account_circle_24"/>
+
+    <item
+        android:id="@+id/more"
+        android:enabled="true"
+        android:title="More"
+        android:icon="@drawable/ic_baseline_more_horiz_24"/>
+
+</menu>

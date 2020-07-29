@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">urbanmatch</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="state">State</string>
+    <string name="education">Education</string>
+    <string name="occupation">Occupation</string>
+    <string name="relationship_status">Relationship status</string>
+    <string name="height">Height</string>
+    <string name="age">Age</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
