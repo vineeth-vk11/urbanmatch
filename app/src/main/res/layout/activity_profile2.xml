@@ -24,8 +24,7 @@
             android:id="@+id/education_dropdown"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/education"
-            android:inputType="none" />
+            android:hint="@string/education" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -44,8 +43,7 @@
             android:id="@+id/occupation_dropdown"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/occupation"
-            android:inputType="none" />
+            android:hint="@string/occupation" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout

@@ -54,7 +54,28 @@
                 android:id="@+id/name_edit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Full name"
+                android:hint="First name"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/last_name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            app:errorEnabled="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/last_name_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Last name"
                 android:inputType="text" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -68,14 +89,15 @@
             android:layout_marginTop="8dp"
             app:errorEnabled="true"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/name">
+            app:layout_constraintTop_toBottomOf="@+id/last_name">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/dob_edit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Date of birth"
-                android:inputType="date" />
+                android:focusable="false"
+                android:inputType="none" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -93,8 +115,7 @@
                 android:id="@+id/state_dropdown"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Native state"
-                android:inputType="textAutoComplete" />
+                android:hint="Native state" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -111,8 +132,7 @@
                 android:id="@+id/city_dropdown"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="city"
-                android:inputType="textAutoComplete" />
+                android:hint="Lives in city" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -134,20 +154,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
             android:gravity="left"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/dob">
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:id="@+id/male"
                 android:text="Male" />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:id="@+id/female"
                 android:text="Female" />
         </RadioGroup>
 
@@ -158,9 +182,9 @@
             android:layout_marginTop="16dp"
             android:background="#FFFFFF"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.32"
+            app:layout_constraintHorizontal_bias="0.333"
             app:layout_constraintStart_toEndOf="@+id/dob"
-            app:layout_constraintTop_toBottomOf="@+id/name"
+            app:layout_constraintTop_toBottomOf="@+id/last_name"
             app:srcCompat="@drawable/ic_baseline_calendar_today_24" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

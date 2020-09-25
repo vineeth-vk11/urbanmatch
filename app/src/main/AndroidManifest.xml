@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.urbanmatch">
+    package="com.urbanmatch">
 
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -14,28 +13,38 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".profileUi.QualitiesActivity" />
-        <activity android:name=".profileUi.Profile4Activity" />
-        <activity android:name=".profileUi.Profile3Activity" />
-        <activity android:name=".profileUi.Profile2Activity" />
-        <activity android:name=".profileUi.Profile1Activity" />
-        <activity android:name=".UpdateProfileUi.ImageUploadActivity" >
-
-        </activity>
-        <activity android:name=".profileUi.WelcomeActivity" />
-
-        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
-            android:theme="@style/Base.Theme.AppCompat"/>
-
-        <activity android:name=".RegisterActivity">
+        <activity android:name=".LoginHelper.LoginOtpActivity"></activity>
+        <activity android:name=".LoginHelper.LoginMobileNumberActivity" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MoreUi.MembershipActivity" />
+        <activity android:name=".profileUi.QualitiesActivity" />
+        <activity android:name=".profileUi.Profile4Activity" />
+        <activity android:name=".profileUi.Profile3Activity" />
+        <activity android:name=".profileUi.Profile2Activity" />
+        <activity android:name=".profileUi.Profile1Activity" />
+        <activity android:name=".UpdateProfileUi.ImageUploadActivity" />
+        <activity android:name=".profileUi.WelcomeActivity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".MainActivity" />
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_MvrwOKu0TQyu0C" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

@@ -16,11 +16,11 @@
             android:id="@+id/qualities_group"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:clickable="false"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="80dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="50dp"
+            android:clickable="false"
             app:chipSpacingHorizontal="5dp"
             app:layout_constraintBottom_toBottomOf="@+id/save"
             app:layout_constraintEnd_toEndOf="parent"
@@ -29,11 +29,11 @@
             app:singleSelection="false">
 
             <com.google.android.material.chip.Chip
-                android:id="@+id/adventorous"
+                android:id="@+id/adventurous"
                 style="@style/Widget.MaterialComponents.Chip.Filter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Adventorous" />
+                android:text="Adventurous" />
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/ambitious"
@@ -217,24 +217,28 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="GadgetLover" />
+
             <com.google.android.material.chip.Chip
                 android:id="@+id/gameaddict"
                 style="@style/Widget.MaterialComponents.Chip.Filter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="GameAddict" />
+
             <com.google.android.material.chip.Chip
                 android:id="@+id/geek"
                 style="@style/Widget.MaterialComponents.Chip.Filter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Geek" />
+
             <com.google.android.material.chip.Chip
                 android:id="@+id/gym"
                 style="@style/Widget.MaterialComponents.Chip.Filter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Gym" />
+
             <com.google.android.material.chip.Chip
                 android:id="@+id/humorous"
                 style="@style/Widget.MaterialComponents.Chip.Filter"
@@ -472,6 +476,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Yoga" />
+
         </com.google.android.material.chip.ChipGroup>
 
         <Button
@@ -485,13 +490,13 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:id="@+id/textView11"
-            android:layout_width="341dp"
-            android:layout_height="35dp"
+            android:id="@+id/info"
+            android:layout_width="335dp"
+            android:layout_height="52dp"
             android:layout_marginTop="16dp"
             android:text="Select 10 of your best qualities"
             android:textColor="#000000"
-            android:textSize="24sp"
+            android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

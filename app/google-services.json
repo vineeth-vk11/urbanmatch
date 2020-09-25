@@ -42,6 +42,35 @@
           ]
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1084416029765:android:fd01fbd8a93638508d9f2c",
+        "android_client_info": {
+          "package_name": "com.urbanmatch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1084416029765-adsssaqcb85u748qbogibjau2iib3s11.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDess56fsN_rmOe6EjXgL7AInKQ2UtRuG0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1084416029765-adsssaqcb85u748qbogibjau2iib3s11.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
     }
   ],
   "configuration_version": "1"
