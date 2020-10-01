@@ -288,7 +288,9 @@ public class HomeFragment extends Fragment {
                                     querySnapShot.getString("occupation"),
                                     querySnapShot.getString("relationship"),
                                     querySnapShot.getString("userId"),
-                                    finalScore
+                                    finalScore,
+                                    querySnapShot.getString("instagram"),
+                                    querySnapShot.getString("linkedin")
                             );
 
                             userModelArrayList.add(userModel);

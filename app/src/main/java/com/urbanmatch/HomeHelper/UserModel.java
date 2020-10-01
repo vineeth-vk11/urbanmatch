@@ -15,12 +15,14 @@ public class UserModel {
     String relationship;
     String uid;
     int fScore;
+    String instagram;
+    String linkedin;
 
     public UserModel() {
     }
 
 
-    public UserModel(String city, String currentState, String dob, String age, String education, String gender, String height, String name, String lastName, String nativeState, String occupation, String relationship, String uid, int fScore) {
+    public UserModel(String city, String currentState, String dob, String age, String education, String gender, String height, String name, String lastName, String nativeState, String occupation, String relationship, String uid, int fScore, String instagram, String linkedin) {
         this.city = city;
         this.currentState = currentState;
         this.dob = dob;
@@ -35,6 +37,8 @@ public class UserModel {
         this.relationship = relationship;
         this.uid = uid;
         this.fScore = fScore;
+        this.instagram = instagram;
+        this.linkedin = linkedin;
     }
 
     public String getCity() {
@@ -147,5 +151,21 @@ public class UserModel {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public String getInstagram() {
+        return instagram;
+    }
+
+    public void setInstagram(String instagram) {
+        this.instagram = instagram;
+    }
+
+    public String getLinkedin() {
+        return linkedin;
+    }
+
+    public void setLinkedin(String linkedin) {
+        this.linkedin = linkedin;
     }
 }

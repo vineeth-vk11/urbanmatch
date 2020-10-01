@@ -58,6 +58,7 @@ public class NewHomeFragment extends Fragment {
 
     ViewPager viewPager;
 
+    Boolean subscribed;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -100,6 +101,7 @@ public class NewHomeFragment extends Fragment {
                     userRelationship = documentSnapshot.getString("relationship").trim();
                     userHeight = documentSnapshot.getString("height").trim();
                     userOccupation = documentSnapshot.getString("occupation").trim();
+                    subscribed = documentSnapshot.getBoolean("subscription");
 
                     userDetails.put("name",userName);
                     userDetails.put("age",userAge);
@@ -111,6 +113,7 @@ public class NewHomeFragment extends Fragment {
                     userDetails.put("city",userCity);
                     userDetails.put("occupation",userOccupation);
                     userDetails.put("uid",userId);
+                    userDetails.put("subscription",subscribed);
 
                     Log.i("userGender",userGender);
 
@@ -181,6 +184,7 @@ public class NewHomeFragment extends Fragment {
             }
         });
     }
+
     public void getRecommendations() {
 
         Log.i("method","entered");
@@ -251,11 +255,14 @@ public class NewHomeFragment extends Fragment {
                                         querySnapShot.getString("occupation"),
                                         querySnapShot.getString("relationship"),
                                         querySnapShot.getString("userId"),
-                                        finalScore
+                                        finalScore,
+                                        querySnapShot.getString("instagram"),
+                                        querySnapShot.getString("linkedin")
                                 );
 
+                                Log.i("instagram",querySnapShot.getString("instagram"));
+                                
                                 if(connectedModelArrayList.size()==0){
-                                    Log.i("loop1","entered");
                                     userModelArrayList.add(userModel);
                                 }
                                 else {
@@ -263,16 +270,13 @@ public class NewHomeFragment extends Fragment {
                                     for(int i = 0; i<connectedModelArrayList.size(); i++){
                                         if(!connectedModelArrayList.get(i).getOppositeUserId().equals(querySnapShot.getString("userId"))){
                                             userModelArrayList.add(userModel);
-                                            Log.i("user", "not connected");
-                                        }
-                                        else {
-                                            Log.i("user", "connected");
+                                            break;
                                         }
                                     }
                                 }
                             }
 
-                            NewHomeAdapter newHomeAdapter = new NewHomeAdapter(getContext(),userModelArrayList,userDetails);
+                            NewHomeAdapter newHomeAdapter = new NewHomeAdapter(getContext(),userModelArrayList,userDetails,subscribed);
                             viewPager.setAdapter(newHomeAdapter);
                         }
                     }
